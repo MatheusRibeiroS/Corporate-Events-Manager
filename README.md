@@ -22,7 +22,7 @@ Este projeto de Gestão de Eventos Corporativos foi desenvolvido com o intuito d
 
 A arquitetura do sistema é baseada em microserviços, com os seguintes componentes principais:
 
-![Arquitetura](path/para/sua/imagem.png)
+![Arquitetura](./public/architecture.png)
 
 - **API Gateway**: Centraliza e distribui as requisições para os serviços apropriados. Responsável pela autenticação usando tokens JWT.
 - **Auth Service**: Gerencia a autenticação e autorização de usuários, incluindo registro, login e geração de tokens JWT.
