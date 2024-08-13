@@ -47,3 +47,5 @@ A arquitetura do sistema é baseada em microserviços, com os seguintes componen
    ```bash
    git clone https://github.com/MatheusRibeiroS/Corporate-Events-Manager.git
    cd "nome do módulo que deseja executar"
+   npm i
+   npm run dev
