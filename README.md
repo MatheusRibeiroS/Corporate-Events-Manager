@@ -45,5 +45,5 @@ A arquitetura do sistema é baseada em microserviços, com os seguintes componen
 1. Clone este repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/MatheusRibeiroS/Corporate-Events-Manager.git
+   cd "nome do módulo que deseja executar"
