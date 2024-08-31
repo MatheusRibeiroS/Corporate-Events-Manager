@@ -1,8 +1,7 @@
-import { urlencoded, json, application } from "express";
+import { urlencoded, json } from "express";
 import express from "express";
-import { notFound } from "./middleware/not-found";
-import { error } from "./middleware/error";
 import * as dotenv from 'dotenv';
+import appRouter from "./routers/app.router";
 
 dotenv.config();
 
@@ -11,13 +10,10 @@ const app = express();
 app.use(urlencoded({ extended: true }));
 app.use(json());
 
-app.use(notFound);
-app.use(error);
+app.get('/health', (req, res) => {
+  res.status(200).send('Health check - OK'); 
+})
 
-const port = process.env.PORT || 4000;
-
-application.listen(port, () => {
-  console.log(`Listening on port ${port}`);
-});
+app.use('/api', appRouter);
 
 export default app;
