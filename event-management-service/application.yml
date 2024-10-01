@@ -1,0 +1,13 @@
+server:
+  error:
+    include-message: always
+spring:
+  data:
+    mongodb:
+      auto-index-creation: true
+      authentication-database: admin
+      username: root
+      password: example
+      database: mongo_db
+      port: 27017
+      host: localhost
